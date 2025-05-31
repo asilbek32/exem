@@ -1,0 +1,10 @@
+@mixin nav_button {
+  border: none;
+  width: 154px;
+  height: 40px;
+  padding: 12px 16px;
+  border-radius: 90px;
+  background-color: $main_bg_color;
+  border: 2px solid #e6e8ec;
+  cursor: pointer;
+}

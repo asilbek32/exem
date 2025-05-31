@@ -1,0 +1,82 @@
+.fleet {
+  padding: 0 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 100px;
+  div {
+    span {
+      font-family: Poppins;
+      font-weight: 700;
+      font-size: 12px;
+      line-height: 12px;
+      letter-spacing: 0%;
+      text-transform: uppercase;
+      color: #777e90;
+    }
+
+    h2 {
+      @extend %style-h2;
+      @media (max-width: 375px) {
+        font-size: 40px;
+      }
+    }
+
+    p {
+      @extend %style-p;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 24px;
+      margin-bottom: 40px;
+    }
+
+    div {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 18px;
+      border: 2px solid #e6e8ec;
+      border-radius: 90px;
+      width: 300px;
+      padding: 14px 16px;
+      input {
+        border: none;
+      }
+
+      @media (max-width: 375px) {
+        margin-bottom: 48px;
+      }
+    }
+
+    .imd {
+      width: 100%;
+
+      @media (max-width: 375px) {
+        display: none;
+      }
+    }
+  }
+
+  @media (max-width: 1024px) {
+    padding: 0 0 0 40px;
+    margin-bottom: 80px;
+  }
+
+  @media (max-width: 620px) {
+    flex-wrap: wrap;
+  }
+
+  @media (max-width: 375px) {
+    padding: 0 15px;
+    margin-bottom: 64px;
+    flex-direction: column;
+  }
+}
+
+.min-version {
+  display: none;
+  width: 100%;
+  @media (max-width: 375px) {
+    display: flex;
+  }
+}

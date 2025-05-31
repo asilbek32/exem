@@ -1,0 +1,59 @@
+// padding
+@for $i from 1 through 8 {
+  .p-#{$i} {
+    padding: (1rem/4) * $i;
+  }
+}
+
+@for $i from 1 through 8 {
+  .pt-#{$i} {
+    padding-top: (1rem/4) * $i;
+  }
+}
+@for $i from 1 through 8 {
+  .pr-#{$i} {
+    padding-right: (1rem/4) * $i;
+  }
+}
+
+@for $i from 1 through 8 {
+  .pb-#{$i} {
+    padding-bottom: (1rem/4) * $i;
+  }
+}
+@for $i from 1 through 8 {
+  .pl-#{$i} {
+    padding-left: (1rem/4) * $i;
+  }
+}
+
+// margin
+@for $i from 1 through 8 {
+  .m-#{$i} {
+    margin: (1rem/4) * $i;
+  }
+}
+
+@for $i from 1 through 8 {
+  .mt-#{$i} {
+    margin-top: (1rem/4) * $i;
+  }
+}
+@for $i from 1 through 8 {
+  .mr-#{$i} {
+    margin-right: (1rem/4) * $i;
+  }
+}
+
+@for $i from 1 through 8 {
+  .mb-#{$i} {
+    margin-bottom: (1rem/4) * $i;
+  }
+}
+@for $i from 1 through 8 {
+  .ml-#{$i} {
+    margin-left: (1rem/4) * $i;
+  }
+}
+
+

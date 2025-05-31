@@ -1,0 +1,88 @@
+.destinations {
+  padding: 0 0 0 80px;
+  .text {
+    margin-bottom: 48px;
+    h2 {
+      @extend %style-h2;
+
+      @media (max-width: 375px) {
+        font-size: 40px;
+      }
+    }
+
+    p {
+      @extend %style-p-section;
+
+      @media (max-width: 375px) {
+        font-size: 16px;
+      }
+    }
+  }
+
+  .cards {
+    display: grid;
+    grid-template-columns: 336px 336px 336px 336px;
+    gap: 32px;
+    overflow: auto;
+
+    .card {
+      position: relative;
+
+      span {
+        position: absolute;
+        left: 16px;
+        top: 16px;
+        background-color: #23262f;
+        box-shadow: 0px 8px 16px -8px #0f0f0f1a;
+        color: #fcfcfd;
+        font-size: 12px;
+        border-radius: 32px;
+        padding: 8px 12px 6px;
+      }
+
+      img {
+        width: 100%;
+        border-radius: 24px;
+        margin-bottom: 21px;
+      }
+
+      h3 {
+        @extend %style-h3;
+      }
+
+      p {
+        @extend %style-p;
+        color: #777e90;
+        font-size: 12px;
+      }
+    }
+    margin-bottom: 48px;
+    @media (max-width: 1024px) {
+      grid-template-columns: 265px 265px 265px 265px;
+    }
+  }
+
+  button {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    border: 2px solid #e6e8ec;
+    background-color: $main_bg_color;
+    border-radius: 90px;
+    width: 162px;
+    height: 48px;
+    color: #23262f;
+    cursor: pointer;
+  }
+  margin-bottom: 136px;
+
+  @media (max-width: 1024px) {
+    padding: 0 0 0 40px;
+  }
+
+  @media (max-width: 375px) {
+    padding: 0 0 0 15px;
+  }
+}
