@@ -8,3 +8,19 @@
   border: 2px solid #e6e8ec;
   cursor: pointer;
 }
+
+@mixin responsive-padding {
+
+  @media (max-width: 1440px) {
+    padding: 0 80px;
+  }
+
+  @media (max-width: 1024px) {
+    padding: 0 40px;
+  }
+
+  @media(max-width:375px){
+    padding: 0 17px;
+  }
+
+}

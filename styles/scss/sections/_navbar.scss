@@ -17,7 +17,7 @@
 
     p {
       @extend %style-p;
-      color: #777e90;
+      color: $color_777e90;
     }
 
     .lan {
@@ -52,7 +52,7 @@
 
     p {
       @extend %style-p;
-      color: #777e90;
+      color: $color_777e90;
     }
 
     .lan {

@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 .p-1 {
   padding: 0.25rem;
 }
@@ -318,7 +320,7 @@
   margin-left: 2rem;
 }
 
-.nearby .cards .card p, .fleet div p, .destinations .cards .card p, .tablet_nav div p, .navbar div p {
+footer .copi p, footer .footer-erap .footer-title p, .locations .pagenable_locations div p, .faq-tab .faq-list > div div span, .faq-tab .faq-list > div div p, .nearby .cards .card p, .fleet div p, .destinations .cards .card p, .tablet_nav div p, .navbar div p {
   font-family: DM Sans;
   font-weight: 700;
   font-size: 14px;
@@ -326,7 +328,7 @@
   letter-spacing: 0%;
 }
 
-.nearby div p, .destinations .text p {
+.locations p, .nearby div p, .destinations .text p {
   font-family: Poppins;
   font-weight: 400;
   font-size: 24px;
@@ -335,7 +337,7 @@
   color: #777e90;
 }
 
-.services .title h2, .nearby div h2, .fleet div h2, .destinations .text h2 {
+.locations h2, .faq-tab h2, .services .title h2, .nearby div h2, .fleet div h2, .destinations .text h2 {
   font-family: DM Sans;
   font-weight: 700;
   font-size: 48px;
@@ -375,7 +377,11 @@ body {
 .container {
   max-width: 1440px;
   margin: 0 auto;
-  padding: 0 80px;
+}
+@media (max-width: 1440px) {
+  .container {
+    padding: 0 80px;
+  }
 }
 @media (max-width: 1024px) {
   .container {
@@ -840,11 +846,31 @@ body {
   line-height: 12px;
   letter-spacing: 0%;
   text-transform: uppercase;
-  color: #23262f;
+  text-align: center;
+  color: #777e90;
   margin-bottom: 8px;
 }
+@media (max-width: 375px) {
+  .services .title .fot-td {
+    display: none;
+  }
+}
+.services .title .for-mobile {
+  display: none;
+}
+@media (max-width: 375px) {
+  .services .title .for-mobile {
+    display: block;
+  }
+}
 .services .title h2 {
+  align-items: center;
   margin-bottom: 32px;
+}
+@media (max-width: 1024px) {
+  .services .title h2 {
+    font-size: 32px;
+  }
 }
 .services .title button {
   border: none;
@@ -853,6 +879,12 @@ body {
   background-color: #3b71fe;
   color: #fcfcfd;
   border-radius: 90px;
+  cursor: pointer;
+}
+@media (max-width: 375px) {
+  .services .title {
+    margin-bottom: 48px;
+  }
 }
 .services .card_wrapper {
   display: flex;
@@ -901,6 +933,309 @@ body {
 }
 @media (max-width: 375px) {
   .services {
+    padding: 0 15px;
+  }
+}
+
+.logoes {
+  padding: 0 80px;
+  display: grid;
+  grid-template-columns: 1fr 1px 1fr 1px 1fr;
+  grid-template-rows: 1fr 1px 1fr;
+  margin-bottom: 136px;
+}
+.logoes img {
+  padding: 20px 20px 20px 80px;
+}
+@media (max-width: 375px) {
+  .logoes img {
+    border-bottom: 1px solid #e6e8ec;
+  }
+}
+.logoes .v-line {
+  background-color: #e6e8ec;
+  width: 1px;
+  height: 100%;
+}
+@media (max-width: 375px) {
+  .logoes .v-line {
+    display: none;
+  }
+}
+.logoes .h-line {
+  grid-column: 1/-1;
+  background-color: #e6e8ec;
+  height: 1px;
+  width: 100%;
+}
+@media (max-width: 375px) {
+  .logoes .h-line {
+    display: none;
+  }
+}
+@media (max-width: 1024px) {
+  .logoes {
+    margin-bottom: 112px;
+    padding: 0 40px;
+  }
+}
+@media (max-width: 375px) {
+  .logoes {
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+    padding: 0 15px;
+    margin-bottom: 64px;
+  }
+}
+
+.faq-tab {
+  max-width: 736px;
+  margin: 0 auto;
+  margin-bottom: 136px;
+}
+.faq-tab h2 {
+  text-align: center;
+  margin-bottom: 48px;
+}
+.faq-tab .faq-tabs {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  margin-bottom: 70px;
+}
+.faq-tab .faq-tabs button {
+  border: none;
+  background-color: #fcfcfd;
+  color: #777e90;
+  width: 80px;
+  height: 28px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.faq-tab .faq-tabs button:hover {
+  border-radius: 100px;
+  background-color: #353945;
+  color: #fcfcfd;
+}
+@media (max-width: 375px) {
+  .faq-tab .faq-tabs {
+    display: none;
+  }
+}
+.faq-tab .mobile {
+  display: none;
+}
+@media (max-width: 375px) {
+  .faq-tab .mobile {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 64px;
+  }
+}
+.faq-tab .mobile .general {
+  border: 1px solid #e6e8ec;
+  outline: none;
+  width: 100%;
+  border-radius: 12px;
+  padding: 12px;
+}
+.faq-tab .faq-list {
+  display: flex;
+  flex-direction: column;
+}
+.faq-tab .faq-list :last-child {
+  border-bottom: none;
+}
+.faq-tab .faq-list > div {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #e6e8ec;
+  padding: 15px 0;
+}
+.faq-tab .faq-list > div div {
+  display: flex;
+  gap: 32px;
+}
+.faq-tab .faq-list > div div p {
+  color: #777e90;
+}
+.faq-tab .faq-list > div div span {
+  color: #3b71fe;
+}
+.faq-tab .faq-list > div div h3 {
+  font-family: Poppins;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0%;
+  color: #23262f;
+}
+@media (max-width: 1024px) {
+  .faq-tab {
+    padding: 0 40px;
+  }
+}
+@media (max-width: 375px) {
+  .faq-tab {
+    padding: 0 15px;
+  }
+}
+
+.locations {
+  padding: 0 0 0 80px;
+  margin-bottom: 200px;
+}
+.locations h2 {
+  text-align: center;
+  margin-bottom: 12px;
+}
+@media (max-width: 375px) {
+  .locations h2 {
+    font-size: 40px;
+  }
+}
+.locations p {
+  text-align: center;
+  margin-bottom: 64px;
+}
+.locations .pagenable_locations {
+  display: grid;
+  grid-template-columns: 256px 256px 256px 256px 256px;
+  overflow: auto;
+  gap: 32px;
+}
+.locations .pagenable_locations div {
+  padding: 32px;
+  border: 2px solid #f4f5f6;
+  border-radius: 24px;
+}
+.locations .pagenable_locations div div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 47px;
+  height: 26px;
+  border-radius: 32px;
+  background-color: #e6e8ec;
+  margin-bottom: 74px;
+}
+.locations .pagenable_locations div div span {
+  font-family: Poppins;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 12px;
+  letter-spacing: 0%;
+  text-transform: uppercase;
+  color: #23262f;
+}
+.locations .pagenable_locations div img {
+  margin-bottom: 24px;
+}
+.locations .pagenable_locations div h3 {
+  font-family: Poppins;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0%;
+  color: #23262f;
+  margin-bottom: 4px;
+}
+.locations .pagenable_locations div p {
+  text-align: left;
+}
+@media (max-width: 1024px) {
+  .locations {
+    padding: 0 40px;
+  }
+}
+@media (max-width: 375px) {
+  .locations {
+    padding: 0 17px;
+    margin-bottom: 150px;
+  }
+}
+
+footer {
+  padding: 0 80px 80px;
+}
+footer .footer-erap {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  margin-bottom: 48px;
+}
+footer .footer-erap .footer-title {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+footer .footer-erap .footer-title p {
+  color: #777e90;
+}
+@media (max-width: 375px) {
+  footer .footer-erap .footer-title p {
+    text-align: left;
+    display: block;
+    width: 112px;
+  }
+}
+footer .footer-erap .footer-title span {
+  font-family: Poppins;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 12px;
+  letter-spacing: 0%;
+  text-transform: uppercase;
+  color: #23262f;
+}
+footer .footer-erap .footer-title div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 18px;
+  border: 2px solid #e6e8ec;
+  border-radius: 90px;
+  width: 256px;
+  padding: 14px 16px;
+}
+footer .footer-erap .footer-title div input {
+  border: none;
+}
+@media (max-width: 375px) {
+  footer .footer-erap .footer-title div {
+    width: 311px;
+  }
+}
+@media (max-width: 375px) {
+  footer .footer-erap .footer-title {
+    flex-direction: row;
+    gap: 55px;
+  }
+}
+@media (max-width: 375px) {
+  footer .footer-erap .input-email {
+    flex-direction: column;
+    gap: 16px;
+  }
+}
+@media (max-width: 375px) {
+  footer .footer-erap {
+    flex-direction: column;
+    gap: 48px;
+  }
+}
+footer .copi p {
+  color: #23262f;
+}
+@media (max-width: 375px) {
+  footer .copi p {
+    font-size: 12px;
+    padding: 24px 0;
+  }
+}
+@media (max-width: 375px) {
+  footer {
     padding: 0 15px;
   }
 }/*# sourceMappingURL=main.css.map */

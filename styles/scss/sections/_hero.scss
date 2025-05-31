@@ -33,13 +33,13 @@
     width: 188px;
     height: 48px;
     border-radius: 90px;
-    background-color: #3b71fe;
-    color: #fcfcfd;
+    background-color: $color_3b71fe;
+    color: $color_fcfcfd;
     cursor: pointer;
 
     &:hover {
-      background-color: #fcfcfd;
-      color: #3b71fe;
+      background-color: $color_fcfcfd;
+      color: $color_3b71fe;
     }
   }
 

@@ -1,0 +1,98 @@
+.faq-tab {
+  max-width: 736px;
+  margin: 0 auto;
+  margin-bottom: 136px;
+  h2 {
+    @extend %style-h2;
+    text-align: center;
+    margin-bottom: 48px;
+  }
+
+  .faq-tabs {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    margin-bottom: 70px;
+
+    button {
+      border: none;
+      background-color: $color_fcfcfd;
+      color: $color_777e90;
+      width: 80px;
+      height: 28px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+
+      &:hover {
+        border-radius: 100px;
+        background-color: #353945;
+        color: $color_fcfcfd;
+      }
+    }
+    @media (max-width: 375px) {
+      display: none;
+    }
+  }
+
+  .mobile {
+    display: none;
+    @media (max-width: 375px) {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 64px;
+    }
+
+    .general {
+      border: 1px solid $color_e6e8ec;
+      outline: none;
+      width: 100%;
+      border-radius: 12px;
+      padding: 12px;
+    }
+  }
+
+  .faq-list {
+    display: flex;
+    flex-direction: column;
+
+    :last-child {
+      border-bottom: none;
+    }
+
+    > div {
+      display: flex;
+      justify-content: space-between;
+      border-bottom: 1px solid $color_e6e8ec;
+      padding: 15px 0;
+
+      div {
+        display: flex;
+        gap: 32px;
+        p {
+          @extend %style-p;
+          color: $color_777e90;
+        }
+
+        span {
+          @extend %style-p;
+          color: $color_3b71fe;
+        }
+
+        h3 {
+          font-family: Poppins;
+          font-weight: 500;
+          font-size: 16px;
+          line-height: 24px;
+          letter-spacing: 0%;
+          color: #23262f;
+        }
+      }
+    }
+  }
+  @media (max-width: 1024px) {
+    padding: 0 40px;
+  }
+  @media (max-width: 375px) {
+    padding: 0 15px;
+  }
+}

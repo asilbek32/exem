@@ -1,0 +1,45 @@
+.logoes {
+  padding: 0 80px;
+  display: grid;
+  grid-template-columns: 1fr 1px 1fr 1px 1fr;
+  grid-template-rows: 1fr 1px 1fr;
+  margin-bottom: 136px;
+
+  img {
+    padding: 20px 20px 20px 80px;
+    @media (max-width: 375px) {
+      border-bottom: 1px solid $color_e6e8ec;
+    }
+  }
+
+  .v-line {
+    background-color: $color_e6e8ec;
+    width: 1px;
+    height: 100%;
+    @media (max-width: 375px) {
+      display: none;
+    }
+  }
+
+  .h-line {
+    grid-column: 1 / -1;
+    background-color: $color_e6e8ec;
+    height: 1px;
+    width: 100%;
+    @media (max-width: 375px) {
+      display: none;
+    }
+  }
+  @media (max-width: 1024px) {
+    margin-bottom: 112px;
+    padding: 0 40px;
+  }
+  @media (max-width: 375px) {
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+    padding: 0 15px;
+    margin-bottom: 64px;
+
+  }
+}

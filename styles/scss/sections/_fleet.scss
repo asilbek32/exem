@@ -12,7 +12,7 @@
       line-height: 12px;
       letter-spacing: 0%;
       text-transform: uppercase;
-      color: #777e90;
+      color: $color_777e90;
     }
 
     h2 {
@@ -35,7 +35,7 @@
       justify-content: space-between;
       align-items: center;
       gap: 18px;
-      border: 2px solid #e6e8ec;
+      border: 2px solid $color_e6e8ec;
       border-radius: 90px;
       width: 300px;
       padding: 14px 16px;
